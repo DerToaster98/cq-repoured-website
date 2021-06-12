@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/cq-repoured-website/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/cq-repoured-website/static/js/main.01441645.chunk.js",
+    "main.js.map": "/cq-repoured-website/static/js/main.01441645.chunk.js.map",
+    "runtime-main.js": "/cq-repoured-website/static/js/runtime-main.9f67e2aa.js",
+    "runtime-main.js.map": "/cq-repoured-website/static/js/runtime-main.9f67e2aa.js.map",
+    "static/js/2.cb7f629f.chunk.js": "/cq-repoured-website/static/js/2.cb7f629f.chunk.js",
+    "static/js/2.cb7f629f.chunk.js.map": "/cq-repoured-website/static/js/2.cb7f629f.chunk.js.map",
+    "static/js/3.1f033ed4.chunk.js": "/cq-repoured-website/static/js/3.1f033ed4.chunk.js",
+    "static/js/3.1f033ed4.chunk.js.map": "/cq-repoured-website/static/js/3.1f033ed4.chunk.js.map",
+    "index.html": "/cq-repoured-website/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/cq-repoured-website/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.cb7f629f.chunk.js.LICENSE.txt": "/cq-repoured-website/static/js/2.cb7f629f.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/cq-repoured-website/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9f67e2aa.js",
+    "static/js/2.cb7f629f.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.01441645.chunk.js"
+  ]
+}
