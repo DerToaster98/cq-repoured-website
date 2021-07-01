@@ -1,0 +1,1 @@
+import CQR_GITHUB_REPOSITORY_URL from './Constants';
