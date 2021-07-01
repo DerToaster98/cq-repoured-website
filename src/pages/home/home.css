@@ -1,0 +1,18 @@
+article header {
+    text-align: left;
+    font-size: 2em;
+    font-weight: 1;
+    padding-bottom: 0.5em;
+}
+
+article {
+    padding: 0.75em;
+    text-align: left;
+    font-weight: 1;
+    font-size: 1.5em;
+
+}
+
+div.slideshow-with-description {
+    padding-bottom: 1em;
+}
