@@ -17,10 +17,12 @@ nav .navbarItem {
     line-height: 4em;
     padding-left: 1.5em;
     padding-right: 1.5em;
+    border-bottom: solid 0.25em white;
 }
 
 nav a:hover {
     background-color: rgba(232, 231, 231, 0.5);
+    border-bottom: transparent 0.25em rgba(232, 231, 231, 0.5);
     transition: 0.5s;
     transform: scale(1.05);
 }
