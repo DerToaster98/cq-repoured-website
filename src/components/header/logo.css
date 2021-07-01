@@ -1,0 +1,28 @@
+.logo-container a {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.logo-container .logo-text {
+    display: table-column;
+    line-height: 1em;
+}
+
+.logo-container .logo-text h1 {
+    color: black;
+    font-size: 3.6em;
+    text-align: left;
+    text-decoration: none;
+}
+
+.logo-container .logo-text h2 {
+    color: gray;
+    font-size: 1.2em;
+    text-align: left;
+    text-decoration: none;
+}
