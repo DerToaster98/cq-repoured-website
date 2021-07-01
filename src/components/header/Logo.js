@@ -8,7 +8,7 @@ export default class Logo extends Component {
     render() {
        return (
             <div class="logo-container">
-                <Link href="/home">
+                <Link href="/">
                     <img alt="CQR-Logo" src={logo} className="logo"></img>
                     <div className="logo-text">
                         <h1>CQR</h1>

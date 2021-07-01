@@ -9,7 +9,7 @@ export default class NavBar extends Component {
         return (
            <nav>
                 <BrowserRouter className="navbar">
-                    <NavLink className="navbarItem" activeClassName="navbarItem active" to="/home" exact><div>Main Page</div></NavLink>
+                    <NavLink className="navbarItem" activeClassName="navbarItem active" to="/" exact><div>Main Page</div></NavLink>
                     <NavLink className="navbarItem" activeClassName="navbarItem active" to="/changelog"><div>Changelog</div></NavLink>
                     <NavLink className="navbarItem" activeClassName="navbarItem active" to="/downloads" exact><div>Downloads</div></NavLink>
                     <NavLink className="navbarItem" activeClassName="navbarItem active" to="/team" exact><div>The Team</div></NavLink>
