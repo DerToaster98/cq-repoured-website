@@ -1,0 +1,14 @@
+.banner-container {
+    width: 100%;
+    left: 0;
+
+    background-size: cover;
+    border-bottom: solid 0.5em #ffd54f;
+}
+
+.banner-container .banner-text {
+    font-size: 5em;
+    color: white;
+    padding-top: 0.5em;
+    padding-bottom: 1.5em;
+}
