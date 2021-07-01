@@ -14,7 +14,7 @@ export default class NavBar extends Component {
                     <NavLink className="navbarItem" activeClassName="navbarItem active" to="/downloads" exact><div>Downloads</div></NavLink>
                     <NavLink className="navbarItem" activeClassName="navbarItem active" to="/team" exact><div>The Team</div></NavLink>
                     <a className="navbarItem" href="http://cqr-wiki.org" target="_blank"><div>Wiki</div></a>
-                    <NavLink className="navbarItem" activeClassName="navbarItem active" to="/theteam" exact><div>Player Made Dungeons</div></NavLink>
+                    <NavLink className="navbarItem" activeClassName="navbarItem active" to="/pmd" exact><div>Player Made Dungeons</div></NavLink>
                 </BrowserRouter>
            </nav>
         );
