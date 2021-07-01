@@ -47,10 +47,31 @@
 }
 
 .bg-side {
-  width: 10%;
+  width: 20%;
   background-color: #efefef;
 }
 
 .centered {
   justify-content: center;
 }
+
+/* Dashed border */
+hr.line-dashed {
+  border: 3px dashed #bbb;
+}
+
+/* Dotted border */
+hr.dotted {
+  border: 3px dotted #bbb;
+}
+
+/* Solid border */
+hr.line-solid {
+  border: 3px solid #bbb;
+}
+
+/* Rounded border */
+hr.line-rounded {
+  border: 8px solid #bbb;
+  border-radius: 5px;
+} 
