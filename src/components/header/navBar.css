@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav .navbarItem {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    font-size: 1.1em;
+    display: inline-block;
+    letter-spacing: normal;
+    float: none;
+    position: relative;
+    line-height: 4em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+nav a:hover {
+    background-color: rgba(232, 231, 231, 0.5);
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+nav .active {
+    border-bottom: solid 0.25em #ffd54f;
+    background-color: rgba(232, 231, 231, 0.5);
+}
