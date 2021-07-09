@@ -1,4 +1,4 @@
-const SLIDE_PATH_PREFIX = '../../assets/slideshow/';
+const SLIDE_PATH_PREFIX = 'slides/';
 
 export const SLIDES_CASTLES = [
     SLIDE_PATH_PREFIX + 'castles/1.jpg',

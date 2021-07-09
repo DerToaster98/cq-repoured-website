@@ -7,7 +7,43 @@ import Banner from '../../components/banner/Banner';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
+import { SLIDES_CASTLES } from './Slideshows';
+import { SLIDES_CASTLES_SNOW } from './Slideshows';
+import { SLIDES_VOLCANO } from './Slideshows';
+import { SLIDES_STRONGHOLDS } from './Slideshows';
+import { SLIDES_OUTPOSTS } from './Slideshows';
+import { SLIDES_TAVERNS } from './Slideshows';
+import { SLIDES_NETHER } from './Slideshows';
+import { SLIDES_SHIPS } from './Slideshows';
+import { SLIDES_CAVES } from './Slideshows';
+import { SLIDES_WALL } from './Slideshows';
+
 export default class Home extends Component {
+
+    createSingleSlide(image, slidename) {
+        return (
+            <div className="each-slide">
+                <img src={`url(${image})`} />
+                <div style={{'backgroundImage': `url(${image})`}}>
+                    <span>{slidename}</span>
+                </div>
+            </div>
+        );
+    }
+
+    createSlideShowObject(images) {
+        var slides = '';
+        for(let i = 0; i < images.length; i++) {
+            let ci = images[i];
+            let slide = this.createSingleSlide(ci, i);
+            slides += slide
+        }
+        return (
+            <Slide easing="ease">
+                {slides}
+            </Slide>
+        );
+    }
 
     render() {
         return (
@@ -38,6 +74,9 @@ export default class Home extends Component {
                                 <hr className="line-solid"></hr>
 
                                 <div className="slideshow-with-description">
+                                    <div>
+                                       {this.createSlideShowObject(SLIDES_CASTLES)}
+                                    </div>
                                     <article>
                                         <header>
                                         Mighty fortresses
@@ -65,6 +104,9 @@ export default class Home extends Component {
                                         Conquer the volcano, invade the stronghold located inside it and mine all that ore!
                                         </section>
                                     </article>
+                                    <div>
+                                       {this.createSlideShowObject(SLIDES_VOLCANO)}
+                                    </div>
                                 </div>
 
                                 <div className="slideshow-with-description">
