@@ -1,4 +1,4 @@
-article header {
+header {
     text-align: left;
     font-size: 2em;
     font-weight: 1;
@@ -7,12 +7,35 @@ article header {
 
 article {
     padding: 0.75em;
+    padding-left: 0em;
     text-align: left;
     font-weight: 1;
     font-size: 1.5em;
 
 }
 
-div.slideshow-with-description {
+.slideshow-with-description-left {
+    padding: 0em;
+    padding-right: 0.75em;
+}
+
+.slideshow-with-description-right {
+    padding: 0em;
+    padding-left: 0.75em;
+}
+
+div .slideshow-with-description {
     padding-bottom: 1em;
+    flex-flow: row;
+    flex-direction: row;
+    display: flex;
+}
+
+.slideshow-with-description .slideshow-container {
+    width: 50%;
+    height: 100%;
+}
+
+.slideshow-with-description article {
+    width: 100%;
 }
