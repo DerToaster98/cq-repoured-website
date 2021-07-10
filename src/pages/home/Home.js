@@ -17,7 +17,6 @@ import { SLIDES_NETHER } from './Slideshows';
 import { SLIDES_SHIPS } from './Slideshows';
 import { SLIDES_CAVES } from './Slideshows';
 import { SLIDES_WALL } from './Slideshows';
-import { Constants } from 'discord.js';
 
 export default class Home extends Component {
     render() {
