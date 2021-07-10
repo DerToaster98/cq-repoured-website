@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 
-import { HashRouter, Route, Redirect } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 
 import Logo from './components/header/Logo'
 import NavBar from './components/header/NavBar'
