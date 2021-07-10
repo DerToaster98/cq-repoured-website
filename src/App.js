@@ -6,8 +6,10 @@ import Logo from './components/header/Logo'
 import NavBar from './components/header/NavBar'
 
 import Home from './pages/home/Home';
-
-
+import Team from './pages/team/Team';
+import Changelog from './pages/changelog/Changelog';
+import Downloads from './pages/downloads/Downloads';
+import PMD from './pages/pmd/PMD';
 
 function App() {
 
@@ -21,11 +23,12 @@ function App() {
         </Route>
         
         <Route path='/' exact component={Home}></Route>
-        {/*<Route path='/changelog/:changelogID' component={}></Route>
-        <Route path='/downloads' exact component={}></Route>
-        <Route path='/team' exact component={}></Route>
-        <Route path='/pmd' exact component={}></Route>
-        */}
+        <Route path='/team' exact component={Team}></Route>
+        <Route path='/changelog' exact component={Changelog}></Route>
+        <Route path='/changelog/:changelogID' component={Changelog}></Route>
+        <Route path='/downloads' exact component={Downloads}></Route>
+        <Route path='/pmd' exact component={PMD}></Route>
+        
       </HashRouter>
       
     </div>

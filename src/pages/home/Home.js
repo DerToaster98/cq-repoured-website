@@ -20,10 +20,6 @@ import { SLIDES_WALL } from './Slideshows';
 
 export default class Home extends Component {
     render() {
-        /*return(<div>
-                {createSlideShowObject(SLIDES_CASTLES)}
-            </div>
-         )*/
         return (
             <div>
                 <Banner displayText="Welcome"></Banner>
@@ -33,6 +29,7 @@ export default class Home extends Component {
                             Chocolate Quest Repoured is the reawakening of the famous BetterDungeons / ChocolateQuest Mod made by Chocolatin!
                         </span>
                         <br></br>
+                        <br></br>
                         <span>
                             To accomplish this task we had to start from the ground up meaning that this is a completely different mod, however it still is heavily inspired by it.
                         </span>
@@ -40,6 +37,7 @@ export default class Home extends Component {
                         <span>
                             We hope to give you an awesome experience with this, which is a passion project made possible by a few individuals that spend their free time on this.
                         </span>
+                        <br></br>
                         <br></br>
                         <span>
                             Below we gave an overview over all the different kinds of dungeons in the main mod you can discover. This however doesn’t cover all of them.
