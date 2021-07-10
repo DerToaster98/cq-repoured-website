@@ -1,4 +1,33 @@
+import { Slide } from 'react-slideshow-image';
+import { getSiteBaseURL } from '../../Constants';
+
 const SLIDE_PATH_PREFIX = 'slides/';
+
+function createSingleSlide(images, slidename) {
+    return (
+        <div className="each-slide">
+            <div style={{'backgroundImage': `url(${getSiteBaseURL() + "/" + images[slidename]})`}}>
+                <span style={{'display':'none'}}>{slidename}</span>
+            </div>
+        </div>
+    );
+}
+
+function generateSlides(images) {
+    var slides = [];
+    for(let i = 0; i < images.length; i++) {
+        slides[i] = createSingleSlide(images, i);
+    }
+    return slides;
+}
+
+export function createSlideShowObject(images) {
+    var ret = (
+        <Slide easing="ease">
+            {generateSlides(images)}
+        </Slide>);
+    return ret;
+}
 
 export const SLIDES_CASTLES = [
     SLIDE_PATH_PREFIX + 'castles/1.jpg',
