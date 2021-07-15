@@ -1,6 +1,6 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Slide } from 'react-slideshow-image';
-import { getSiteBaseURL, LazyBackground } from '../../Constants';
+import { getSiteBaseURL } from '../../Constants';
 
 const SLIDE_PATH_PREFIX = 'slides/';
 
