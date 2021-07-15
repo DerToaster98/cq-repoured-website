@@ -2,6 +2,8 @@ import './usercontainer.css';
 
 import { Component } from 'react';
 
+import { generateLazyBackgroundWithJustImagePath } from '../../Constants';
+
 export default class UserContainer extends Component {
 
     constructor(props) {
@@ -9,6 +11,7 @@ export default class UserContainer extends Component {
 
         this.state = {
             loadingImage: true,
+            username: this.props.username,
             imageSrc: this.props.imageSrc,
             textContainer: this.props.userinfo,
             userLinks: this.props.userlinks
@@ -17,9 +20,10 @@ export default class UserContainer extends Component {
 
     render() {
         return (
-            <div>
+            <div className="team-member-container">
+                <h1>{this.state.username}</h1>
                 <div className='user-avatar'>
-
+                    {generateLazyBackgroundWithJustImagePath(this.state.imageSrc)}
                 </div>
                 <div className='user-info'>
                     {this.state.textContainer}
