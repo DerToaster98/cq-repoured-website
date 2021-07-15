@@ -1,0 +1,7 @@
+.member-section {
+    display: table;
+}
+
+.member-card {
+    display: table-cell;
+}
