@@ -81,10 +81,10 @@ export default class Team extends Component {
                     <h1>Notable helping hands</h1>    
                     <div className="member-section">
                         <div className="member-card">
-                            <UserContainer username='Scooptwoo' imageSrc={null} userinfo={DESCRIPTION_SCOOPTWOO} userlinks={null}></UserContainer>
+                            <UserContainer username='Scooptwoo' imageSrc={IMAGE_PATH_PREFIX + "scooptwoo.png"} userinfo={DESCRIPTION_SCOOPTWOO} userlinks={null}></UserContainer>
                         </div>
                         <div className="member-card">
-                            <UserContainer username='Turbulation' imageSrc={null} userinfo={DESCRIPTION_TURBULATION} userlinks={null}></UserContainer>
+                            <UserContainer username='Turbulation' imageSrc={IMAGE_PATH_PREFIX + "turbulation.png"} userinfo={DESCRIPTION_TURBULATION} userlinks={null}></UserContainer>
                         </div>
                     </div>
                 </div>
