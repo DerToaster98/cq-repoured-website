@@ -1,0 +1,14 @@
+.team-member-container {
+    max-width: 100%;
+}
+
+.team-member-container img {
+    width: 75%;
+    max-width: 100%;
+}
+
+.team-member-container .user-info {
+    font-size: 1.125em;
+    hyphens: auto;
+    text-align: justify;
+}

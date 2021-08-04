@@ -7,21 +7,21 @@ import "./team.css";
 
 const IMAGE_PATH_PREFIX = 'team/';
 
-const DESCRIPTION_ARLO_THE_EPIC = "";
-const DESCRIPTION_CHOCOLATIN = "Chocolatin is the former author of BetterDungeons/ChocolateQuest/CQC, he built the entire Chocolate Quest mod himself, and, outside of a small fraction of the textures and dungeon structures, single-handedly did every single thing in the mod's 1.7.10 version, as well as every older version. His current whereabouts are unknown";
-const DESCRIPTION_DERTOASTER = "";
+const DESCRIPTION_ARLO_THE_EPIC = "Arlo is our Project Leader and also America's future president. He is responsible for bringing the original mod's dungeons into the new version, as well as various odd jobs around the project.";
+const DESCRIPTION_CHOCOLATIN = "Chocolatin is the former author of BetterDungeons/ChocolateQuest/CQC, he built the entire Chocolate Quest mod himself, and, outside of a small fraction of the textures and dungeon structures, single-handedly did every single thing in the mod's 1.7.10 version, as well as every older version. His current whereabouts are unknown.";
+const DESCRIPTION_DERTOASTER = "DerToaster is one of our developers, you can even say he is the main developer. He is responsible for Bosses, dungeon generation and parts of the Mob AI, also he is responsible for solving a lot of bugs and creating some of the mob and armor models.";
 
-const DESCRIPTION_KALGOGSMASH = ""
-const DESCRIPTION_MELDEXUN = ""
-const DESCRIPTION_TIVIACZ1337 = ""
-const DESCRIPTION_XYRON = ""
+const DESCRIPTION_KALGOGSMASH = "Kalgogsmash is another one of our developers. He created the randomized castle generator and items including the spears and hookshots. Kalgog did not play the original CQC, but he is a huge fantasy nerd so he is also working on the game lore and future content ideas."
+const DESCRIPTION_MELDEXUN = "Meldexun is a developer since Aug 2019. Since his first experience with CQC he loved the mod and also built some dungeons. When he discovered CQR he wanted to be a part of it to bring back the mod in it’s old glory. He started working on mobs and their AI and continued with working on the dungeon system, various items and other stuff."
+const DESCRIPTION_TIVIACZ1337 = "Tiviacz1337 is one of the earliest developers working on the mod. He coded most of the weapons and armor items along with blocks. That includes bonus abilities for full armor sets and special actions of swords and guns."
+const DESCRIPTION_XYRON = "Xyron was a Frontend developer and UI engineer working on the looks and feels of the dungeon share project in collaboration with Der Toaster."
 
-const DESCRIPTION_PION_STEAM = ""
-const DESCRIPTION_SILENTINE = ""
-const DESCRIPTION_SIR_SQUIDLY = ""
+const DESCRIPTION_PION_STEAM = "I am a curious yet careful human being.  Technical to the limits of my own knowledge.  Enjoys learning about things in all the scientific fields. Likes chocolate ... and cheese. Currently the \"Noise Maker\" of the mod."
+const DESCRIPTION_SILENTINE = "Makes low poly, pixel art models and textures. Worked mainly on remaking the item models/textures and mob textures of the mod. He also made a mod called Grimoire of Gaia."
+const DESCRIPTION_SIR_SQUIDLY = "Sir Squidly is one of the earliest artists to join the team, creating pixel art textures and models. Primarily did most of the Block textures, some entity models and textures, and various misc graphics. Is also a modder of various other video games."
 
-const DESCRIPTION_SCOOPTWOO = ""
-const DESCRIPTION_TURBULATION = ""
+const DESCRIPTION_SCOOPTWOO = "Scooptwoo was a moderator on our discord and helped out answering questions."
+const DESCRIPTION_TURBULATION = "Turbulation is a person that has collected information about old chocolate quest versions and has set up an archive for those."
 
 export default class Team extends Component {
 
@@ -39,7 +39,7 @@ export default class Team extends Component {
                     <hr className="line-solid"></hr>
                 </div>
                 <div className="page-content">
-                    <h1>Leadership</h1>    
+                    <h1 className="heading">Leadership</h1>    
                     <div className="member-section">
                         <div className="member-card">
                             <UserContainer username='Chocolatin' imageSrc={IMAGE_PATH_PREFIX + "chocolatin.png"} userinfo={DESCRIPTION_CHOCOLATIN} userlinks={null}></UserContainer>
@@ -51,7 +51,7 @@ export default class Team extends Component {
                             <UserContainer username='DerToaster' imageSrc={IMAGE_PATH_PREFIX + "dertoaster.png"} userinfo={DESCRIPTION_DERTOASTER} userlinks={null}></UserContainer>
                         </div>
                     </div>
-                    <h1>Developers</h1>    
+                    <h1 className="heading">Developers</h1>    
                     <div className="member-section">
                         <div className="member-card">
                             <UserContainer username='KalgogSmash' imageSrc={IMAGE_PATH_PREFIX + "kalgog_smash.png"} userinfo={DESCRIPTION_KALGOGSMASH} userlinks={null}></UserContainer>
@@ -66,7 +66,7 @@ export default class Team extends Component {
                             <UserContainer username='Xyron' imageSrc={IMAGE_PATH_PREFIX + "xyron.png"} userinfo={DESCRIPTION_XYRON} userlinks={null}></UserContainer>
                         </div>
                     </div>
-                    <h1>Artists</h1>    
+                    <h1 className="heading">Artists</h1>    
                     <div className="member-section">
                         <div className="member-card">
                             <UserContainer username='Pion Steam' imageSrc={IMAGE_PATH_PREFIX + "pion_steam.png"} userinfo={DESCRIPTION_PION_STEAM} userlinks={null}></UserContainer>
@@ -78,7 +78,7 @@ export default class Team extends Component {
                             <UserContainer username='Sir Squidly' imageSrc={IMAGE_PATH_PREFIX + "sir_squidly.png"} userinfo={DESCRIPTION_SIR_SQUIDLY} userlinks={null}></UserContainer>
                         </div>
                     </div>
-                    <h1>Notable helping hands</h1>    
+                    <h1 className="heading">Notable helping hands</h1>    
                     <div className="member-section">
                         <div className="member-card">
                             <UserContainer username='Scooptwoo' imageSrc={IMAGE_PATH_PREFIX + "scooptwoo.png"} userinfo={DESCRIPTION_SCOOPTWOO} userlinks={null}></UserContainer>
