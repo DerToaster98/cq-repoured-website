@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import LoadingSymbol from "./components/loadingSymbol/LoadingSymbol";
 
 export const CQR_GITHUB_REPOSITORY_URL = "https://github.com/TeamChocoQuest/ChocolateQuestRepoured";
 export const SITE_BASE_URL = "cq-repoured-website";
@@ -13,7 +14,7 @@ export function generateLazyBackgroundWithJustImagePath(imagePath) {
     image.src = urlsrc;
 
     return(
-        <LazyLoadImage alt={image.alt} src={urlsrc}></LazyLoadImage>
+        <LazyLoadImage placeholder={<LoadingSymbol></LoadingSymbol>} alt={image.alt} src={urlsrc}></LazyLoadImage>
     );
 }
 
