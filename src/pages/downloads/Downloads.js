@@ -78,7 +78,7 @@ export default class Downloads extends Component {
         return(
             <div className="version-list-item">
                 <span className="version-name">{versionJSON.name}</span>
-                <span className="version-tag">{versionJSON.tag_name}</span>
+                <span className="version-release-date">{new Date(versionJSON.published_at).toLocaleDateString()}</span>
                 <Link to={"/changelog/" + versionJSON.tag_name}>Changelog</Link>
                 <a className="navbarItem" href={versionJSON.assets[0].browser_download_url} target="_blank" rel="noreferrer"><div>Download</div></a>
             </div>
@@ -102,7 +102,7 @@ export default class Downloads extends Component {
                             {
                                 Object.keys(this.state.versions).map((key) => {
                                     return (
-                                        <div key={key}>
+                                        <div className="version-item-container" key={key}>
                                             {this.state.versions[key]}
                                         </div>
                                     );
