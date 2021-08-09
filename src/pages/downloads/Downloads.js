@@ -49,14 +49,10 @@ export default class Downloads extends Component {
 
                             return;
                         }
-                        var entriesFetched = 0;
-                        const component = this;
                         //There is data to query...
                         for(var entry in responseJSON) {
-                            const currentCounter = entriesFetched
                             let data = responseJSON[entry];
-                            this.state.versions.push(component.createVersionEntryItem(data));
-                            entriesFetched++;
+                            this.state.versions.push(this.createVersionEntryItem(data));
                         }
                         var pages = this.state.page + 1;
                         this.setState({
