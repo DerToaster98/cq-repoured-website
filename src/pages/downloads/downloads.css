@@ -1,0 +1,25 @@
+.version-table-row:hover {
+    background-color: rgba(232, 231, 231, 0.5);
+    transition: 0.5s;
+    transform: scale(1.025);
+}
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
+th {
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.version-table-row {
+    margin-top: 1.25em;
+    font-size: 1.5rem;
+    font-weight: 1;
+}
+
+.version-table-row a {
+    text-decoration: none;
+}

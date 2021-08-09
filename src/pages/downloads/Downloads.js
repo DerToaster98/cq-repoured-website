@@ -32,6 +32,10 @@ export default class Downloads extends Component {
     }
 
     fetchGitHubReleases() {
+        this.setState({
+            requestingData : true
+        });
+
         var requestOptions = {
             method: 'GET',
             redirect: 'follow'
@@ -45,7 +49,10 @@ export default class Downloads extends Component {
                 response.json().then(
                     responseJSON => {
                         if(Object.keys(responseJSON).length === 0) {
-                            this.setState({areThereAnyMorePagesToRequest: false });
+                            this.setState({
+                                areThereAnyMorePagesToRequest: false,
+                                requestingData : false 
+                            });
 
                             return;
                         }
@@ -64,6 +71,10 @@ export default class Downloads extends Component {
             }
         ).catch(
             error => {
+                this.setState({
+                    areThereAnyMorePagesToRequest: false ,
+                    requestingData : false
+                });
                 console.log(error);
                 console.log("An error occured :(");
             }
@@ -76,12 +87,12 @@ export default class Downloads extends Component {
 
     createVersionEntryItem(versionJSON) {
         return(
-            <div className="version-list-item">
-                <span className="version-name">{versionJSON.name}</span>
-                <span className="version-release-date">{new Date(versionJSON.published_at).toLocaleDateString()}</span>
-                <Link to={"/changelog/" + versionJSON.tag_name}>Changelog</Link>
-                <a className="navbarItem" href={versionJSON.assets[0].browser_download_url} target="_blank" rel="noreferrer"><div>Download</div></a>
-            </div>
+            <tr className="version-table-row">
+                <td><span className="version-name">{versionJSON.name}</span></td>
+                <td><span className="version-release-date">{new Date(versionJSON.published_at).toLocaleDateString()}</span></td>
+                <td><Link to={"/changelog/" + versionJSON.tag_name}>Changelog</Link></td>
+                <td><a className="navbarItem" href={versionJSON.assets[0].browser_download_url} target="_blank" rel="noreferrer"><div>Download</div></a></td>
+            </tr>
         );
     }
 
@@ -98,23 +109,34 @@ export default class Downloads extends Component {
                     </article>
                     <hr className="line-solid"></hr>
                     <div className="list-content">
-                        <div className="version-list">
-                            {
-                                Object.keys(this.state.versions).map((key) => {
-                                    return (
-                                        <div className="version-item-container" key={key}>
-                                            {this.state.versions[key]}
-                                        </div>
-                                    );
-                                })
-                            }
-                        </div>
+                        <table className="version-table">
+                            <tbody>
+                                <tr>
+                                    <th>Version Name</th>
+                                    <th>Release Date</th>
+                                    <th>Download Link</th>
+                                    <th>Download Link</th>
+                                </tr>
+                                {
+                                    Object.keys(this.state.versions).map((key) => {
+                                        return (
+                                            /*<tr className="version-table-row" key={key}>
+                                                {this.state.versions[key]}
+                                            </tr>*/
+                                            this.state.versions[key]
+                                        );
+                                    })
+                                }
+                            </tbody>
+                        </table>
                     </div>
+                    <hr className="line-solid"></hr>
+                    <br></br>
                     <div className="load-more-section">
                         {this.state.requestingData ? 
                             <LoadingSymbol></LoadingSymbol> 
                             : 
-                            this.state.areThereAnyMorePagesToRequest ? <button className="btn-load-more" onClick={this.handleLoadMoreButtonClick}>Load more...</button> : null
+                            this.state.areThereAnyMorePagesToRequest ? <button className="btn-styled-cqr" onClick={this.handleLoadMoreButtonClick}>Load more...</button> : null
                         }
                     </div>
                 </div>
