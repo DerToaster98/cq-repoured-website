@@ -102,3 +102,22 @@ hr.line-rounded {
   border: 8px solid #bbb;
   border-radius: 5px;
 } 
+
+/* The fancy button */
+.btn-styled-cqr {
+	background-color: #800080;;
+	border: 2.5rem;
+	border-radius: 8px;
+	border-color: none;
+	color: white;
+	padding: 12px 30px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.btn-styled-cqr:hover {
+	background-color: #550055;
+  transform: scale(1.05);
+	transition: 0.25s;
+}
