@@ -3,6 +3,10 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import LoadingSymbol from "./components/loadingSymbol/LoadingSymbol";
 
 export const CQR_GITHUB_REPOSITORY_URL = "https://github.com/TeamChocoQuest/ChocolateQuestRepoured";
+export const GITHUB_REPOSITORY = "ChocolateQuestRepoured";
+export const GITHUB_REPOSITORY_OWNER = "TeamChocoQuest";
+export const GITHUB_API_URL_BASE = "https://api.github.com"
+
 export const SITE_BASE_URL = "cq-repoured-website";
 export function getSiteBaseURL() {
     return window.location.origin + "/" + SITE_BASE_URL;
