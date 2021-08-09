@@ -28,6 +28,11 @@ function App() {
         <Route path='/changelog/:changelogID' component={Changelog}></Route>
         <Route path='/downloads' exact component={Downloads}></Route>
         <Route path='/pmd' exact component={PMD}></Route>
+        {/* 
+        Regex to detect versions: ([A-Z][a-z])*(-([0-9])*) 
+        <Route path='/([A-Z][a-z])*(-([0-9])*)/'></Route>
+        //TODO: Redirect to new page => Redirect component
+        */}
         
       </HashRouter>
       
