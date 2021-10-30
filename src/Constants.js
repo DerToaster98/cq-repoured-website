@@ -6,6 +6,7 @@ export const CQR_GITHUB_REPOSITORY_URL = "https://github.com/TeamChocoQuest/Choc
 export const GITHUB_REPOSITORY = "ChocolateQuestRepoured";
 export const GITHUB_REPOSITORY_OWNER = "TeamChocoQuest";
 export const GITHUB_API_URL_BASE = "https://api.github.com"
+export const GITHUB_API_URL_CQR = GITHUB_API_URL_BASE + "/repos/" + GITHUB_REPOSITORY_OWNER + "/" + GITHUB_REPOSITORY;
 
 export const SITE_BASE_URL = "cq-repoured-website";
 export function getSiteBaseURL() {
