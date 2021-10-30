@@ -1,5 +1,7 @@
 import './App.css';
 
+import 'react-slideshow-image/dist/styles.css';
+import React from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 
 import Logo from './components/header/Logo'
@@ -35,7 +37,6 @@ function App() {
         */}
         
       </HashRouter>
-      
     </div>
   );
 }

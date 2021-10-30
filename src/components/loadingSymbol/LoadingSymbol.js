@@ -1,4 +1,4 @@
-import {React, Component} from 'react';
+import React, { Component} from 'react';
 import './loadingSymbol.css';
 
 export default class LoadingSymbol extends Component {

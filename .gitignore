@@ -3,6 +3,8 @@
 # dependencies
 /node_modules
 /.pnp
+/package_lock.json
+
 .pnp.js
 
 # testing

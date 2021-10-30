@@ -1,6 +1,8 @@
 /* Slideshow stuff */
+/*
 @import "react-slideshow-image/dist/styles.css";
 
+*/
 .each-slide > div {
   display: flex;
   align-items: center;

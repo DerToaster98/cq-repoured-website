@@ -6,6 +6,8 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+    height: 150px;
+    
 }
 
 .logo-container .logo-text {

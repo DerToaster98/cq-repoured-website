@@ -1,6 +1,6 @@
 import './home.css'
 
-import { Component } from 'react'
+import React, { Component } from 'react'
 import Banner from '../../components/banner/Banner';
 
 /* Slideshow stuff */
