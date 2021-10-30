@@ -12,7 +12,7 @@ export default class Changelog extends Component {
     constructor(props) {
         super(props);
 
-        var version = "latest";
+        let version = "latest";
 
         try {
             version = this.props.match.params.changelogID;
@@ -20,7 +20,7 @@ export default class Changelog extends Component {
             //Ignore
             version = "latest";
         }
-        if(version === '' || !version) {
+        if(version === '' ) {
             version = "latest";
         }
 
@@ -33,7 +33,7 @@ export default class Changelog extends Component {
     }
 
     async componentDidMount() {
-        const query = GITHUB_API_URL_CQR + "/releases/" + this.state.versionNameGH;
+        const query = GITHUB_API_URL_CQR + "/releases/" + (this.state.versionNameGH === 'latest' ? 'latest' : ('tags/' + this.state.versionNameGH));
         const requestOptions = {
             method: 'GET',
             redirect: 'follow'
