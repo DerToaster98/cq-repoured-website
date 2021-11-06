@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+
 import Banner from "../../components/banner/Banner";
 import LoadingSymbol from "../../components/loadingSymbol/LoadingSymbol";
 
@@ -73,6 +76,9 @@ export default class Changelog extends Component {
                     {
                     //TODO: Find something that can render github-flavored markdown, then render the body of the json object here
                     }
+					<ReactMarkdown remarkPlugins={[remarkGfm]}>
+						{this.state.releaseObject.body}
+					</ReactMarkdown>
                 </div>
             </article>
             <hr className="line-solid"></hr>
