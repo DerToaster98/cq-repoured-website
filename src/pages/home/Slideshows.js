@@ -3,7 +3,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Slide } from 'react-slideshow-image';
 import { getSiteBaseURL } from '../../Constants';
 
-const SLIDE_PATH_PREFIX = 'slides/';
+const SLIDE_PATH_PREFIX = '../slides/';
 
 function createSingleSlide(images, slidename) {
     let urlsrc = getSiteBaseURL() + "/" + images[slidename];
