@@ -1,0 +1,20 @@
+.version-name {
+    font-size: 2em;
+    font-weight: 200;
+}
+
+.changelog-text-md h1 {
+    font-weight: 300;
+}
+
+.changelog-text-md h2 {
+    font-weight: 300;
+}
+
+.changelog-text-md {
+    font-size: 1.25em;
+}
+
+.changelog-text-md ul {
+    list-style-type: circle;
+}

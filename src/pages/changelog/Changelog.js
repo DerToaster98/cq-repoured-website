@@ -17,7 +17,7 @@ export default class Changelog extends Component {
     constructor(props) {
         super(props);
 
-        let version = "latest";
+        var version = "latest";
 
         try {
             version = this.props.match.params.changelogID;
@@ -47,7 +47,7 @@ export default class Changelog extends Component {
         const apiResponse = await fetch(query, requestOptions);
         const jsonResponse = await apiResponse.json();
 
-        if(this.state.versionNameGH = 'latest') {
+        if(this.state.versionNameGH === 'latest') {
             this.setState({releaseDownloadURI : 'https://www.curseforge.com/minecraft/mc-mods/cqrepoured/download'});
         }
         else {
@@ -76,19 +76,12 @@ export default class Changelog extends Component {
         const pageContent = this.state.loadingDataFromGit ? null : 
         <div className="page-content">
             <article>
-                <span>
-                    TBD (Version: {this.state.versionNameGH})
+                <span className="version-name">
+                    {this.state.releaseObject.name}
                 </span>
                 <br></br>
                 <hr className="line-solid"></hr>
                 <div className="changelog-text-md">
-                    {
-                    //TODO: Find something that can render github-flavored markdown, then render the body of the json object here
-					/*<ReactMarkdown remarkPlugins={[remarkGfm]}>
-						{this.state.releaseObject.body}
-					</ReactMarkdown>*/
-                    }
-					{/*<MDEditor.Markdown source={this.state.releaseObject.body} />*/}
                     {Parser(marked.parse(md))}
                 </div>
             </article>
