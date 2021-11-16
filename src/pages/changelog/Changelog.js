@@ -25,7 +25,7 @@ export default class Changelog extends Component {
             //Ignore
             version = "latest";
         }
-        if(version === "") {
+        if(version === "" || typeof version === 'undefined') {
             version = "latest";
         }
 
