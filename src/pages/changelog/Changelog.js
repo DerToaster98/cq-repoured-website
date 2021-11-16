@@ -76,7 +76,7 @@ export default class Changelog extends Component {
         const pageContent = this.state.loadingDataFromGit ? null : 
         <div className="page-content">
             <article>
-                <span className="version-name">
+                <span className="version-name-cl">
                     {this.state.releaseObject.name}
                 </span>
                 <br></br>
