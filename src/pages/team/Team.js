@@ -5,7 +5,7 @@ import UserContainer from "./UserContainer";
 
 import "./team.css";
 
-const IMAGE_PATH_PREFIX = '../team/';
+const IMAGE_PATH_PREFIX = 'team/';
 
 const DESCRIPTION_ARLO_THE_EPIC = <span>Arlo is our Project Leader and also America's future president. He is responsible for bringing the original mod's dungeons into the new version, as well as various odd jobs around the project.</span>
 const DESCRIPTION_CHOCOLATIN = <span>Chocolatin is the former author of BetterDungeons/ChocolateQuest/CQC, he built the entire Chocolate Quest mod himself, and, outside of a small fraction of the textures and dungeon structures, single-handedly did every single thing in the mod's 1.7.10 version, as well as every older version. His current whereabouts are unknown.</span>
