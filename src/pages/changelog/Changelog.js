@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-
 import Banner from "../../components/banner/Banner";
 import LoadingSymbol from "../../components/loadingSymbol/LoadingSymbol";
 
 import './changelog.css';
 
 import { CQR_GITHUB_REPOSITORY_URL, GITHUB_API_URL_CQR } from "../../Constants";
+
+//import MDEditor from '@uiw/react-md-editor';
+import { marked } from 'marked';
+
+import Parser from 'html-react-parser';
 
 export default class Changelog extends Component {
 
@@ -23,7 +25,7 @@ export default class Changelog extends Component {
             //Ignore
             version = "latest";
         }
-        if(version === '' ) {
+        if(version === "") {
             version = "latest";
         }
 
@@ -65,20 +67,29 @@ export default class Changelog extends Component {
     }
 
     render() {
-        const pageContent = 
+        var md = this.state.releaseObject.body;
+        if (typeof md !== 'undefined') {
+
+        } else {
+            md = ''
+        }
+        const pageContent = this.state.loadingDataFromGit ? null : 
         <div className="page-content">
             <article>
                 <span>
                     TBD (Version: {this.state.versionNameGH})
                 </span>
                 <br></br>
+                <hr className="line-solid"></hr>
                 <div className="changelog-text-md">
                     {
                     //TODO: Find something that can render github-flavored markdown, then render the body of the json object here
-                    }
-					<ReactMarkdown remarkPlugins={[remarkGfm]}>
+					/*<ReactMarkdown remarkPlugins={[remarkGfm]}>
 						{this.state.releaseObject.body}
-					</ReactMarkdown>
+					</ReactMarkdown>*/
+                    }
+					{/*<MDEditor.Markdown source={this.state.releaseObject.body} />*/}
+                    {Parser(marked.parse(md))}
                 </div>
             </article>
             <hr className="line-solid"></hr>

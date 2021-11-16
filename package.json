@@ -7,14 +7,15 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "create-react-app": "^4.0.3",
+    "html-react-parser": "^1.4.0",
+    "marked": "^4.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-lazy-load-image-component": "^1.5.1",
-    "react-markdown": "^7.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^1.1.5",
     "react-slideshow-image": "^3.5.1",
-    "remark-gfm": "^3.0.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -34,7 +35,6 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      "not dead",
       "not op_mini all"
     ],
     "development": [
