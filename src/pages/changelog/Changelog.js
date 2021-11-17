@@ -5,7 +5,7 @@ import LoadingSymbol from "../../components/loadingSymbol/LoadingSymbol";
 
 import './changelog.css';
 
-import { CQR_GITHUB_REPOSITORY_URL, GITHUB_API_URL_CQR } from "../../Constants";
+import { CQR_GITHUB_REPOSITORY_URL, GITHUB_API_URL_CQR, markedGHIssueLinkExtension } from "../../Constants";
 
 //import MDEditor from '@uiw/react-md-editor';
 import { marked } from 'marked';
@@ -73,6 +73,16 @@ export default class Changelog extends Component {
         } else {
             md = ''
         }
+
+        //Init marked with extensions
+        marked.use(
+            {
+                extensions: [
+                    markedGHIssueLinkExtension
+                ]
+            }
+        );
+
         const pageContent = this.state.loadingDataFromGit ? null : 
         <div className="page-content">
             <article>
