@@ -33,7 +33,7 @@ function generateSlides(images) {
 
 export function createSlideShowObject(images) {
     var ret = (
-        <Slide easing="ease" arrows={false}>
+        <Slide easing="ease" arrows={false} canSwipe={false}>
             {generateSlides(images)}
         </Slide>);
     return ret;
