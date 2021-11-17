@@ -56,13 +56,13 @@ export const markedGHIssueLinkExtension = {
         return {                                         // Token to generate
           type: 'ghissuelink',                           // Should match "name" above
           raw: src,
-          rawFront: src.split(match[0])[0],
-          rawBack: src.split(match[0])[1],
+          rawFront: src.split(match[0].substring(1))[0],
+          rawBack: src.split(match[0].substring(1))[1],
           issueId: match[0].substring(2)
         };
       }
     },
     renderer(token) {
-      return token.rawFront + `<a target=_blank href=${CQR_GITHUB_REPOSITORY_ISSUES_URL + "/" + token.issueId}>${ ' #' + token.issueId}</a>` + token.rawBack;
+      return token.rawFront + `<a class="link-no-underline" target=_blank href=${CQR_GITHUB_REPOSITORY_ISSUES_URL + "/" + token.issueId}>${ '#' + token.issueId}</a>` + token.rawBack;
     },
   };
