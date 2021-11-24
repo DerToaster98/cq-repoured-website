@@ -11,7 +11,7 @@ import { GITHUB_API_URL_BASE, GITHUB_REPOSITORY, GITHUB_REPOSITORY_OWNER } from 
 
 export default class Downloads extends Component {
 
-    ENTRIES_PER_PAGE = 10;
+    ENTRIES_PER_PAGE = 20;
     RELEASE_BASE_URL = GITHUB_API_URL_BASE + "/repos/" + GITHUB_REPOSITORY_OWNER + "/" + GITHUB_REPOSITORY
 
     constructor(props) {
@@ -67,7 +67,13 @@ export default class Downloads extends Component {
                         this.setState({
                             page : pages             
                         });
-                        setTimeout(() => {this.fetchGitHubReleases()}, 250);
+                        if(responseJSON.length >= this.ENTRIES_PER_PAGE) {
+                            setTimeout(() => {this.fetchGitHubReleases()}, 125);
+                        } else {
+                            this.setState({
+                                requestingData : false 
+                            });
+                        }
                     }
                 );
             }
