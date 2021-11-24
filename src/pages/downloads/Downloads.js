@@ -18,17 +18,11 @@ export default class Downloads extends Component {
         super(props);
 
         this.state = {
-            areThereAnyMorePagesToRequest : true,
             requestingData : true,
             page : 1,
-            versions : []
+            versions : [],
+            errorText : ""
         }
-
-        this.handleLoadMoreButtonClick = this.handleLoadMoreButtonClick.bind(this);
-    }
-
-    handleLoadMoreButtonClick() {
-        this.fetchGitHubReleases();
     }
 
     fetchGitHubReleases() {
@@ -46,11 +40,19 @@ export default class Downloads extends Component {
         fetch(requestURL, requestOptions).then(
             response => {
                 //response = "{\"entries\": " + response + "}";
+                if(response.status != 200) {
+                    if(response.status == 403) {
+                        this.setState({errorText : "Rate limit for requests to the github API has exceeded! Please try again in a few hours..."});
+                    }
+                    this.setState({
+                        requestingData : false
+                    });
+                    return
+                }
                 response.json().then(
                     responseJSON => {
                         if(Object.keys(responseJSON).length === 0) {
                             this.setState({
-                                areThereAnyMorePagesToRequest: false,
                                 requestingData : false 
                             });
 
@@ -63,9 +65,9 @@ export default class Downloads extends Component {
                         }
                         var pages = this.state.page + 1;
                         this.setState({
-                            page : pages,
-                            requestingData : false
+                            page : pages             
                         });
+                        setTimeout(() => {this.fetchGitHubReleases()}, 250);
                     }
                 );
             }
@@ -109,6 +111,9 @@ export default class Downloads extends Component {
                     </article>
                     <hr className="line-solid"></hr>
                     <div className="list-content">
+                        {this.state.errorText != "" ?
+                        <h3>{this.state.errorText}</h3>
+                        :
                         <table className="version-table">
                             <tbody>
                                 <tr>
@@ -129,6 +134,7 @@ export default class Downloads extends Component {
                                 }
                             </tbody>
                         </table>
+                        }
                     </div>
                     <hr className="line-solid"></hr>
                     <br></br>
@@ -136,7 +142,7 @@ export default class Downloads extends Component {
                         {this.state.requestingData ? 
                             <LoadingSymbol></LoadingSymbol> 
                             : 
-                            this.state.areThereAnyMorePagesToRequest ? <button className="btn-styled-cqr" onClick={this.handleLoadMoreButtonClick}>Load more...</button> : null
+                            null
                         }
                     </div>
                 </div>
