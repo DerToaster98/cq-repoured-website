@@ -30,6 +30,7 @@ export default class Changelog extends Component {
         }
 
         this.state = {
+            errorText: "",
             versionNameGH : version,
             loadingDataFromGit : true,
             releaseDownloadURI : '',
@@ -45,6 +46,24 @@ export default class Changelog extends Component {
         };
 
         const apiResponse = await fetch(query, requestOptions);
+        if(apiResponse.status != 200) {
+            if(apiResponse.status == 403) {
+                this.setState(
+                    {
+                        errorText : "Rate limit for requests to the github API has exceeded! Please try again in a few hours...",
+                        loadingDataFromGit : false
+                    }
+                );
+            } else {
+                this.setState(
+                    {
+                        errorText: "An error occurred whilst requesting information from github! Please try again later!",
+                        loadingDataFromGit : false
+                    }
+                );
+            }
+            return;
+        }
         const jsonResponse = await apiResponse.json();
 
         if(this.state.versionNameGH === 'latest') {
@@ -85,6 +104,9 @@ export default class Changelog extends Component {
 
         const pageContent = this.state.loadingDataFromGit ? null : 
         <div className="page-content">
+            {this.state.errorText != "" ?
+            <h3>{this.state.errorText}</h3>
+            :
             <article>
                 <span className="version-name-cl">
                     {this.state.releaseObject.name}
@@ -95,9 +117,10 @@ export default class Changelog extends Component {
                     {Parser(marked.parse(md))}
                 </div>
             </article>
+            }
             <hr className="line-solid"></hr>
         </div>;
-
+        //TODO: Add in next/previous version entry here
         return (
             <div>
                 <Banner displayText="Changelog"></Banner>
