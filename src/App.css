@@ -107,11 +107,11 @@ hr.line-rounded {
 
 /* The fancy button */
 .btn-styled-cqr {
-	background-color: #800080;;
+	background-color: #ffd54f;
 	border: 2.5rem;
 	border-radius: 8px;
 	border-color: none;
-	color: white;
+	color: gray;
 	padding: 12px 30px;
 	cursor: pointer;
 	font-size: 20px;
@@ -119,7 +119,8 @@ hr.line-rounded {
 }
 
 .btn-styled-cqr:hover {
-	background-color: #550055;
+	background-color: #d1a821;
   transform: scale(1.05);
+  color: white;
 	transition: 0.25s;
 }
