@@ -18,3 +18,19 @@
 .changelog-text-md ul {
     list-style-type: circle;
 }
+
+article .heading-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+article .heading-box .heading-title-box {
+    display: flex;    
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.btn-styled-cqr {
+    font-size: 2.0rem;    
+}

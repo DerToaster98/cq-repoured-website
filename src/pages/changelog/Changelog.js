@@ -108,9 +108,23 @@ export default class Changelog extends Component {
             <h3>{this.state.errorText}</h3>
             :
             <article>
-                <span className="version-name-cl">
-                    {this.state.releaseObject.name}
-                </span>
+                <div className="heading-box">
+                    <div className="heading-title-box">
+                        <span className="version-name-cl">
+                        {this.state.releaseObject.name}
+                        </span>
+                        <span className="release-data">
+                            {"Published on: " + new Date(this.state.releaseObject.published_at).toLocaleDateString()}
+                        </span>
+                    </div>
+                    <div className="heading-download-button">
+                        <a href={this.state.releaseDownloadURI} target="blank">
+                            <button className="btn-styled-cqr">
+                                Download
+                            </button>
+                        </a>
+                    </div>
+                </div>
                 <br></br>
                 <hr className="line-solid"></hr>
                 <div className="changelog-text-md">
