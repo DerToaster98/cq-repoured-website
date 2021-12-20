@@ -16,7 +16,7 @@ const DESCRIPTION_MELDEXUN = <span>Meldexun is a developer since Aug 2019. Since
 const DESCRIPTION_TIVIACZ1337 = <span>Tiviacz1337 is one of the earliest developers working on the mod. He coded most of the weapons and armor items along with blocks. That includes bonus abilities for full armor sets and special actions of swords and guns.</span>
 const DESCRIPTION_XYRON = <span>Xyron was a Frontend developer and UI engineer working on the looks and feels of the dungeon share project in collaboration with Der Toaster.</span>
 
-const DESCRIPTION_PION_STEAM = <span> Pion Steam played CQC when it was previously known as "Better Dungeons." After discovering the mod was being revived, he joined the CQR team as the "Noisemaker." (He adds sounds)<br></br>Since then he has a hand in tweaking this site while being another moderator on our discord.  He likes chocolate.</span>
+const DESCRIPTION_PION_STEAM = <span> Pion Steam played CQC when it was previously known as "Better Dungeons." Some time after discovering the mod was being revived, he joined the CQR team as the "Noisemaker." (Sound maker)<br></br>He had a hand in tweaking this site while being another moderator on our discord.</span>
 const DESCRIPTION_SILENTINE = <span>Makes low poly, pixel art models and textures. Worked mainly on remaking the item models/textures and mob textures of the mod. He also made a mod called Grimoire of Gaia.</span>
 const DESCRIPTION_SIR_SQUIDLY = <span>Sir Squidly is one of the earliest artists to join the team, creating pixel art textures and models. Primarily did most of the Block textures, some entity models and textures, and various misc graphics. Is also a modder of various other video games.</span>
 
