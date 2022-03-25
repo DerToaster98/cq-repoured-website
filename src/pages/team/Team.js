@@ -20,7 +20,7 @@ const DESCRIPTION_PION_STEAM = <span> Pion Steam played CQC when it was previous
 const DESCRIPTION_SILENTINE = <span>Makes low poly, pixel art models and textures. Worked mainly on remaking the item models/textures and mob textures of the mod. He also made a mod called Grimoire of Gaia.</span>
 const DESCRIPTION_SIR_SQUIDLY = <span>Sir Squidly is one of the earliest artists to join the team, creating pixel art textures and models. Primarily did most of the Block textures, some entity models and textures, and various misc graphics. Is also a modder of various other video games.</span>
 
-const DESCRIPTION_SCOOPTWOO = <span>Scooptwoo was a moderator on our discord and helped out answering questions.</span>
+const DESCRIPTION_SCOOPTWOO = <span>Scooptwoo is a moderator on our discord and helps out answering questions.</span>
 const DESCRIPTION_TURBULATION = <span>Turbulation is a person that has collected information about old chocolate quest versions and has set up an archive for those.</span>
 
 export default class Team extends Component {
