@@ -40,8 +40,8 @@ export default class Downloads extends Component {
         fetch(requestURL, requestOptions).then(
             response => {
                 //response = "{\"entries\": " + response + "}";
-                if(response.status != 200) {
-                    if(response.status == 403) {
+                if(response.status !== 200) {
+                    if(response.status === 403) {
                         this.setState({errorText : "Rate limit for requests to the github API has exceeded! Please try again in a few hours..."});
                     }
                     this.setState({
@@ -117,7 +117,7 @@ export default class Downloads extends Component {
                     </article>
                     <hr className="line-solid"></hr>
                     <div className="list-content">
-                        {this.state.errorText != "" ?
+                        {this.state.errorText !== "" ?
                         <h3>{this.state.errorText}</h3>
                         :
                         <table className="version-table">

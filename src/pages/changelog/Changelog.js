@@ -46,8 +46,8 @@ export default class Changelog extends Component {
         };
 
         const apiResponse = await fetch(query, requestOptions);
-        if(apiResponse.status != 200) {
-            if(apiResponse.status == 403) {
+        if(apiResponse.status !== 200) {
+            if(apiResponse.status === 403) {
                 this.setState(
                     {
                         errorText : "Rate limit for requests to the github API has exceeded! Please try again in a few hours...",
@@ -104,7 +104,7 @@ export default class Changelog extends Component {
 
         const pageContent = this.state.loadingDataFromGit ? null : 
         <div className="page-content">
-            {this.state.errorText != "" ?
+            {this.state.errorText !== "" ?
             <h3>{this.state.errorText}</h3>
             :
             <article>
