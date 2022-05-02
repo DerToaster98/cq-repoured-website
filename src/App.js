@@ -12,6 +12,7 @@ import Team from './pages/team/Team';
 import Changelog from './pages/changelog/Changelog';
 import Downloads from './pages/downloads/Downloads';
 import PMD from './pages/pmd/PMD';
+import Footer from './components/footer/footer';
 
 function App() {
 
@@ -30,6 +31,9 @@ function App() {
         <Route path='/changelog/:changelogID' component={Changelog}></Route>
         <Route path='/downloads' exact component={Downloads}></Route>
         <Route path='/pmd' exact component={PMD}></Route>
+        <Route path='/'>
+          <Footer className="main-footer"></Footer>
+        </Route>
         {/* 
         Regex to detect versions: ([A-Z][a-z])*(-([0-9])*) 
         <Route path='/([A-Z][a-z])*(-([0-9])*)/'></Route>
