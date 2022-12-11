@@ -6,13 +6,14 @@ import { HashRouter, Route } from 'react-router-dom';
 
 import Logo from './components/header/Logo'
 import NavBar from './components/header/NavBar'
+import Footer from './components/footer/footer';
 
 import Home from './pages/home/Home';
 import Team from './pages/team/Team';
 import Changelog from './pages/changelog/Changelog';
 import Downloads from './pages/downloads/Downloads';
 import PMD from './pages/pmd/PMD';
-import Footer from './components/footer/footer';
+import LegalDisclosure from './pages/legalDisclosure/LegalDisclosure';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
         <Route path='/changelog/:changelogID' component={Changelog}></Route>
         <Route path='/downloads' exact component={Downloads}></Route>
         <Route path='/pmd' exact component={PMD}></Route>
+        <Route path='/legal-disclosure' exact component={LegalDisclosure}></Route>
         <Route path='/'>
           <Footer className="main-footer"></Footer>
         </Route>
