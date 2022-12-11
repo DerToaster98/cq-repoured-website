@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link} from 'react-router-dom';
 import './footer.css';
 
 const Footer = () => {
@@ -7,18 +8,18 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-navbar">
                     <ul className="list-ul">
-                        <a class="content" href="https://www.curseforge.com/minecraft/mc-mods/cqrepoured">
-                            <span class="navigation-item-f">Curseforge</span>
+                        <a className="navigation-item-f" target="_blank" rel="noreferrer" href="https://www.curseforge.com/minecraft/mc-mods/cqrepoured">
+                            <div>Curseforge</div>
                         </a>
-                        <a class="content" href="https://discordapp.com/invite/StWzzFw">
-                            <span class="navigation-item-f">Discord</span>
+                        <a className="navigation-item-f" target="_blank" rel="noreferrer" href="https://discordapp.com/invite/StWzzFw">
+                            <div>Discord</div>
                         </a>
-                        <a class="content" href="https://github.com/TeamChocoQuest/ChocolateQuestRepoured">
-                            <span class="navigation-item-f">GitHub</span>
+                        <a className="navigation-item-f" target="_blank" rel="noreferrer" href="https://github.com/TeamChocoQuest/ChocolateQuestRepoured">
+                            <div>GitHub</div>
                         </a>
-                        <a class="content" href="https://cq-repoured.net/legal-disclosure/">
-                            <span class="navigation-item-f">Legal Disclosure</span>
-                        </a>
+                        <Link className="navigation-item-f" to="/legal-disclosure/">
+                            <div>Legal Disclosure</div>
+                        </Link>
                     </ul>
                 </div>
             </div>
