@@ -4,6 +4,7 @@ import { Slide } from 'react-slideshow-image';
 import { getSiteBaseURL } from '../../Constants';
 
 const SLIDE_PATH_PREFIX = 'slides/';
+const PMD_PATH_PREFIX = SLIDE_PATH_PREFIX + '_pmd/'
 
 function createSingleSlide(images, slidename) {
     let urlsrc = getSiteBaseURL() + "/" + images[slidename];
@@ -124,4 +125,25 @@ export const SLIDES_CAVES = [
 
 export const SLIDES_WALL = [
     SLIDE_PATH_PREFIX + 'wall/1.jpg'
+]
+
+export const SLIDES_PMD_EXTENDED_TEMPLE = [
+    PMD_PATH_PREFIX + 'extended_temple/1.jpg',
+    PMD_PATH_PREFIX + 'extended_temple/2.jpg',
+    PMD_PATH_PREFIX + 'extended_temple/3.jpg'
+]
+
+export const SLIDES_PMD_SKY_CASTLE = [
+    PMD_PATH_PREFIX + 'sky_castle/1.jpg',
+    PMD_PATH_PREFIX + 'sky_castle/2.jpg',
+    PMD_PATH_PREFIX + 'sky_castle/3.jpg',
+    PMD_PATH_PREFIX + 'sky_castle/4.jpg'
+]
+
+export const SLIDES_PMD_UNDERGROUND_DUNGEON = [
+    PMD_PATH_PREFIX + 'underground_dungeon/1.jpg',
+    PMD_PATH_PREFIX + 'underground_dungeon/2.jpg',
+    PMD_PATH_PREFIX + 'underground_dungeon/3.jpg',
+    PMD_PATH_PREFIX + 'underground_dungeon/4.jpg',
+    PMD_PATH_PREFIX + 'underground_dungeon/5.jpg'
 ]
