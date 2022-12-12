@@ -72,7 +72,10 @@ export default class Home extends Component {
                         <header>
                         Volcanoes
                         </header>
-                        <div className="slideshow-with-description">
+                        <div className="slideshow-with-description order-reverse">
+                            <div className="slideshow-container">
+                                {createSlideShowObject(SLIDES_VOLCANO)}
+                            </div>
                             <article className="slideshow-with-description-left">     
                                 <section>
                                 Being gigantic geological structures, full of resources and wealth, they were the best home a dwarf could ever wish for. However, long ago, the dwarven empires were overrun by creatures called Gremlins.
@@ -81,10 +84,7 @@ export default class Home extends Component {
                                 <section>
                                 Conquer the volcano, invade the stronghold located inside it and mine all that ore!
                                 </section>
-                            </article>
-                            <div className="slideshow-container">
-                                {createSlideShowObject(SLIDES_VOLCANO)}
-                            </div>
+                            </article>                            
                         </div>
                     </div>
 
@@ -114,7 +114,10 @@ export default class Home extends Component {
                         <header>
                         Strongholds
                         </header>
-                        <div className="slideshow-with-description">
+                        <div className="slideshow-with-description order-reverse">
+                            <div className="slideshow-container">
+                                {createSlideShowObject(SLIDES_STRONGHOLDS)}
+                            </div>
                             <article className="slideshow-with-description-left">
                                 <section>
                                 Built by various groups of different races, the hot deserts and icy plains are civilized by rare large underground strongholds.
@@ -124,9 +127,6 @@ export default class Home extends Component {
                                 They seem small measured by the size of their entrances. But beware! Underground lies a large complex of multiple rooms full of treasure and enemies!
                                 </section>
                             </article>
-                            <div className="slideshow-container">
-                                {createSlideShowObject(SLIDES_STRONGHOLDS)}
-                            </div>
                         </div>
                     </div>
                     
@@ -156,7 +156,10 @@ export default class Home extends Component {
                         <header>
                         The depths of the nether
                         </header>
-                        <div className="slideshow-with-description">
+                        <div className="slideshow-with-description order-reverse">
+                            <div className="slideshow-container">
+                                {createSlideShowObject(SLIDES_NETHER)}
+                            </div>
                             <article className="slideshow-with-description-left">                                
                                 <section>
                                 Hidden in the hot depths of the nether’s lava oceans lie the settlements of the boarmen and the minotaurs.
@@ -165,10 +168,7 @@ export default class Home extends Component {
                                 <section>
                                 The boarmen build large grid shaped cities that seem to swim in the lava oceans. The minotaurs however managed to find a way to construct large platforms, hanging from massive chains, to build their houses own.
                                 </section>
-                            </article>
-                            <div className="slideshow-container">
-                                {createSlideShowObject(SLIDES_NETHER)}
-                            </div>
+                            </article>                            
                         </div>
                     </div>
                     
@@ -202,7 +202,10 @@ export default class Home extends Component {
                         <header>
                         Overgrown caves
                         </header>
-                        <div className="slideshow-with-description">
+                        <div className="slideshow-with-description order-reverse">
+                            <div className="slideshow-container">
+                                {createSlideShowObject(SLIDES_CAVES)}
+                            </div>
                             <article className="slideshow-with-description-left">                                
                                 <section>
                                 Deep in the jungles and swamps underneath the surface lie large caves. These caves pose a great habitat for gigantic mushrooms and are a suitable home for gremlins and spiders.
@@ -211,10 +214,7 @@ export default class Home extends Component {
                                 <section>
                                 Some even say that in rare cases, these cave’s main chamber breaches through the surface.
                                 </section>
-                            </article>
-                            <div className="slideshow-container">
-                                {createSlideShowObject(SLIDES_CAVES)}
-                            </div>
+                            </article>                            
                         </div>
                     </div>
                     
