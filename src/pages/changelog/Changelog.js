@@ -5,7 +5,7 @@ import LoadingSymbol from "../../components/loadingSymbol/LoadingSymbol";
 
 import './changelog.css';
 
-import { CQR_GITHUB_REPOSITORY_URL, GITHUB_API_URL_CQR, markedGHIssueLinkExtension } from "../../Constants";
+import { GITHUB_API_URL_CQR, markedGHIssueLinkExtension } from "../../Constants";
 
 //import MDEditor from '@uiw/react-md-editor';
 import { marked } from 'marked';

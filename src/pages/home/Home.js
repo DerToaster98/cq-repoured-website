@@ -12,7 +12,7 @@ import { SLIDES_CASTLES_SNOW } from './Slideshows';
 import { SLIDES_VOLCANO } from './Slideshows';
 import { SLIDES_STRONGHOLDS } from './Slideshows';
 import { SLIDES_OUTPOSTS } from './Slideshows';
-import { SLIDES_TAVERNS } from './Slideshows';
+//import { SLIDES_TAVERNS } from './Slideshows';
 import { SLIDES_NETHER } from './Slideshows';
 import { SLIDES_SHIPS } from './Slideshows';
 import { SLIDES_CAVES } from './Slideshows';

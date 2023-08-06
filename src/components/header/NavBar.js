@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink, HashRouter } from 'react-router-dom';
-import {BrowserView, MobileView} from 'react-device-detect';
+import {BrowserView/*, MobileView*/} from 'react-device-detect';
 
 import './navBar.css';
 
