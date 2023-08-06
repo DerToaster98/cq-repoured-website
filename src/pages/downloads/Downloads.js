@@ -125,7 +125,7 @@ export default class Downloads extends Component {
                                 <tr>
                                     <th>Version Name</th>
                                     <th>Release Date</th>
-                                    <th>Download Link</th>
+                                    <th>Changelog Link</th>
                                     <th>Download Link</th>
                                 </tr>
                                 {
