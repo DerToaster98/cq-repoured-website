@@ -33,6 +33,7 @@ function App() {
         <Route path='/downloads' exact component={Downloads}></Route>
         <Route path='/pmd' exact component={PMD}></Route>
         <Route path='/legal-disclosure' exact component={LegalDisclosure}></Route>
+
         <Route path='/'>
           <Footer className="main-footer"></Footer>
         </Route>
