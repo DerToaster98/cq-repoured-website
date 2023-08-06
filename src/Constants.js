@@ -26,20 +26,6 @@ export function generateLazyBackgroundWithJustImagePath(imagePath) {
     );
 }
 
-export function LazyBackground({src}) {
-    const [source, setSource] = useState(getSiteBaseURL() + '/loading.gif');
-
-    useEffect(() => {
-        const img = new Image();
-        img.src = src;
-        img.onload = () => setSource(src);
-    }, [src]);
-
-    return(
-        <div style={{backgroundImage: `url(${source})`}}></div>
-    )
-}
-
 //Marked stuff
 export const markedGHIssueLinkExtension = {
     name: 'ghissuelink',
