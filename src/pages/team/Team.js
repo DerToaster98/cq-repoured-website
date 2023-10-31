@@ -24,6 +24,8 @@ const DESCRIPTION_TRUFFLEHISTORIAN = <span>Dungeon designer and builder for the 
 const DESCRIPTION_SCOOPTWOO = <span>Scooptwoo is a moderator on our discord and helps out answering questions.</span>
 const DESCRIPTION_TURBULATION = <span>Turbulation is a person that has collected information about old chocolate quest versions and has set up an archive for those.</span>
 
+const DESCRIPTION_RACCOON = <span></span>
+
 export default class Team extends Component {
 
     render() {
@@ -66,6 +68,9 @@ export default class Team extends Component {
                         <div className="member-card">
                             <UserContainer username='Xyron' imageSrc={IMAGE_PATH_PREFIX + "xyron.png"} userinfo={DESCRIPTION_XYRON} userlinks={null}></UserContainer>
                         </div>
+                        <dic className="member-card">
+                            <UserContainer username='This Raccoon' imageSrc={IMAGE_PATH_PREFIX + "raccoon.jpeg"}  userinfo={DESCRIPTION_RACCOON} userlinks={null}></UserContainer>
+                        </dic>
                     </div>
                     <h1 className="heading">Artists</h1>    
                     <div className="member-section">
