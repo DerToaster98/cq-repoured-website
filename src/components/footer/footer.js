@@ -17,6 +17,9 @@ const Footer = () => {
                         <a className="navigation-item-f" target="_blank" rel="noreferrer" href="https://github.com/TeamChocoQuest/ChocolateQuestRepoured">
                             <div>GitHub</div>
                         </a>
+                        <a className="navigation-item-f" target="_blank" rel="noreferrer" href="https://modrinth.com/mod/chocolate-quest-repoured">
+                            <div>Modrinth</div>
+                        </a>
                         <Link className="navigation-item-f" to="/legal-disclosure/">
                             <div>Legal Disclosure</div>
                         </Link>
