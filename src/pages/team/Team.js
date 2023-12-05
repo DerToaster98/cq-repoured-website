@@ -15,6 +15,7 @@ const DESCRIPTION_KALGOGSMASH = <span>Kalgogsmash is another one of our develope
 const DESCRIPTION_MELDEXUN = <span>Meldexun is a developer since Aug 2019. Since his first experience with CQC he loved the mod and also built some dungeons. When he discovered CQR he wanted to be a part of it to bring back the mod in it’s old glory. He started working on mobs and their AI and continued with working on the dungeon system, various items and other stuff.</span>
 const DESCRIPTION_TIVIACZ1337 = <span>Tiviacz1337 is one of the earliest developers working on the mod. He coded most of the weapons and armor items along with blocks. That includes bonus abilities for full armor sets and special actions of swords and guns.</span>
 const DESCRIPTION_XYRON = <span>Xyron was a Frontend developer and UI engineer working on the looks and feels of the dungeon share project in collaboration with Der Toaster.</span>
+const DESCRIPTION_MEME_MAN = <span></span>
 
 const DESCRIPTION_PION_STEAM = <span> Pion Steam played CQC when it was previously known as "Better Dungeons." Some time after discovering the mod was being revived, he joined the CQR team as the "Noisemaker." (Sound maker)<br></br>He had a hand in tweaking this site while being another moderator on our discord.</span>
 const DESCRIPTION_SILENTINE = <span>Makes low poly, pixel art models and textures. Worked mainly on remaking the item models/textures and mob textures of the mod. He also made a mod called Grimoire of Gaia.</span>
@@ -61,6 +62,9 @@ export default class Team extends Component {
                         </div>
                         <div className="member-card">
                             <UserContainer username='Meldexun' imageSrc={IMAGE_PATH_PREFIX + "meldexun.png"} userinfo={DESCRIPTION_MELDEXUN} userlinks={null}></UserContainer>
+                        </div>
+                        <div className="member-card">
+                            <UserContainer username='Meme Man' imageSrc={IMAGE_PATH_PREFIX + "meme_man.jpeg"} userinfo={DESCRIPTION_MEME_MAN} userlinks={null}></UserContainer>
                         </div>
                         <div className="member-card">
                             <UserContainer username='Tiviacz1337' imageSrc={IMAGE_PATH_PREFIX + "tiviacz1337.png"} userinfo={DESCRIPTION_TIVIACZ1337} userlinks={null}></UserContainer>
