@@ -11,15 +11,15 @@ const Footer = () => {
                         <a className="navigation-item-f" target="_blank" rel="noreferrer" href="https://www.curseforge.com/minecraft/mc-mods/cqrepoured">
                             <div>Curseforge</div>
                         </a>
+                        <a className="navigation-item-f" target="_blank" rel="noreferrer" href="https://modrinth.com/mod/chocolate-quest-repoured">
+                            <div>Modrinth</div>
+                        </a>
                         <a className="navigation-item-f" target="_blank" rel="noreferrer" href="https://discordapp.com/invite/StWzzFw">
                             <div>Discord</div>
                         </a>
                         <a className="navigation-item-f" target="_blank" rel="noreferrer" href="https://github.com/TeamChocoQuest/ChocolateQuestRepoured">
                             <div>GitHub</div>
-                        </a>
-                        <a className="navigation-item-f" target="_blank" rel="noreferrer" href="https://modrinth.com/mod/chocolate-quest-repoured">
-                            <div>Modrinth</div>
-                        </a>
+                        </a>                        
                         <Link className="navigation-item-f" to="/legal-disclosure/">
                             <div>Legal Disclosure</div>
                         </Link>
