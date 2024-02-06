@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+// TODO: REGEX re-routing when the old pattern for versions is being used
+
 root.render(<App />);
 
 // If you want to start measuring performance in your app, pass a function
